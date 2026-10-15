@@ -1,0 +1,27 @@
+name: flask_pipline
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs:
+  python_app_pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out the code
+      - uses: actions/checkout@v7
+
+
+      - name: setting up python and depandences
+      - uses: action/setup-python@v7\
+
+      - with:
+          python-version: '3.13'  
+    
+  
+
+
+
+
